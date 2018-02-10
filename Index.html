@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Floreria Aleli</title>
+	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+	
+			<img src="media/Recurso 2.jpg">
+			
+			<nav class="menu">
+				<a href="Index.html">Inicio</a>
+				<a href="Nosotros.html">Sobre nosotros</a>
+				<a href="Catalogo.html">Catálogo</a>
+				<a href="Contacto.html">Contacto</a>
+			</nav>
+		</header>
+		<section class="main">
+			<div class="carrusel">
+				<p class="conoce">El hecho de dar y recibir flores estrecha lazos de unión en las relaciones interpersonales...</p>
+				
+				<div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:800px;margin:0px auto;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/Centros%20de%20mesa.jpg" alt="Centros de mesa"  title="Centros de mesa" />
+                </li>
+                <li><img src="images/Ceremonias.jpg" alt="Ceremonias"  title="Ceremonias" />
+                </li>
+                <li><img src="images/Eventos%20Religiosos.jpg" alt="Eventos Religiosos"  title="Eventos Religiosos" />
+                </li>
+                <li><img src="images/Mesa%20de%20Honor.jpg" alt="Mesa de Honor"  title="Mesa de Honor" />
+                </li>
+                <li><img src="images/Ramo.jpg" alt="Ramo"  title="Ramo" />
+                </li>
+                <li><img src="images/Ramos%20de%20Novia.jpg" alt="Ramos de Novia"  title="Ramos de Novia" />
+                </li>
+                <li><img src="images/Vintage.jpeg" alt="Vintage"  title="Vintage" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="images/Centros%20de%20mesa-tn.jpg" alt="Centros de mesa" title="Centros de mesa" /></li>
+                <li><img src="images/Ceremonias-tn.jpg" alt="Ceremonias" title="Ceremonias" /></li>
+                <li><img src="images/Eventos%20Religiosos-tn.jpg" alt="Eventos Religiosos" title="Eventos Religiosos" /></li>
+                <li><img src="images/Mesa%20de%20Honor-tn.jpg" alt="Mesa de Honor" title="Mesa de Honor" /></li>
+                <li><img src="images/Ramo-tn.jpg" alt="Ramo" title="Ramo" /></li>
+                <li><img src="images/Ramos%20de%20Novia-tn.jpg" alt="Ramos de Novia" title="Ramos de Novia" /></li>
+                <li><img src="images/Vintage-tn.jpeg" alt="Vintage" title="Vintage" /></li>
+            </ul>
+        </div>
+    </div>
+
+	</div>
+            <!--Mapa google -->            
+<h1 align="center"><font color="blue">Ubicación</font></h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(20.6471, -100.405100),
+    zoom:20,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRc5FXuPFW3Kai6MyGk5otFeindUV2N3o=myMap"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> 
+            <div class="cuadros">
+				<div class="cuadro compras">
+					<div class="titulos turquesa">Pedidos y Compras en Línea</div>
+					<div class="contenido ">
+                        <p>Elige una de las opcines:</p> <br>
+						<form>
+							<input type="radio" name="tipo">Cliente<br> 
+							<input type="radio" name="tipo"> ¿Ya eres cliente? <br>
+							<input type="submit" value="Acceder">
+						</form>
+					</div>
+				</div>
+					
+				<div class="cuadro envio">
+					<div class="titulos verde"> Envio a domicilio:</div>
+					<div class="contenido"><p>
+                        ¡Conquista Corazones!</p><br><br><br>
+                        <form>
+						<input type="submit" name="" value="Acceder">
+                        </form>    
+					</div>			
+				</div>
+			<br>
+            </div><br> 
+			
+		</section>
+        <footer>
+			<div class="privacidad">
+				<p>Floreria Aleli. Av.Pie de la Cuesta</p>
+                <p>Col. Lomas de San pedrito Peñuelas</p>
+                <p>Esquina con Av.Diamante</p><br>
+			</div>
+			<div class="redes">
+				<p>Siguenos en nuestras redes sociales: </p>
+				<a href="https://facebook.com"><img src="media/fb-icono.png" alt="" width="35px"></a>
+				<a href="https://instagram.com"><img src="media/icono-instagram.png" alt="" width="35px"></a>
+				<a href="#"><img src="media/whatsapp_logo.png" alt="" width="35px"><p>Cel.4789450983</p></a>
+			</div>
+		</footer>
+        
+	</div>
+</body>
+</html>
