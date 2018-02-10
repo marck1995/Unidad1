@@ -1,0 +1,401 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Amaranth', serif;
+	background: #FFEFD5;
+	background-size: cover;
+	background-attachment: fixed
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: white;
+}
+
+header {
+	width: 100%;
+	background-color: white;
+/*	background: url(../media/pintura_bg.jpg);
+*/	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+
+header .logo {
+	width: 30%;
+	display: flex;
+
+	flex-direction: row-reverse;
+}
+
+header img {
+
+	margin-left: 25%;
+	padding: 10px 30px;
+}
+
+
+header .menu {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 5px 0;
+	background: #F0F8FF;
+}
+
+
+header .menu a {
+	color: #000;
+	background: #F0F8FF;;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 22px;
+
+}
+
+header .menu a:hover {
+	text-decoration: underline;
+}
+
+.main {
+	width: 80%;
+}
+
+
+section h1{
+text-align: center;
+
+}
+section h2{
+text-align: center;
+margin-left: : 5%;
+}
+
+section.formulario{
+	background-color: pink;
+border-radius: 10px;
+height: 350px;
+width: 600px;
+
+margin-left: 20%;
+margin-top: 60px;
+margin-right: 10%;
+
+
+}
+section.formulario table{
+padding: 0px;
+/*border: 2px solid black;*/
+font-weight: bold;
+padding-left: 50px;
+
+}
+
+
+
+.turquesa {
+	background: #4058ED;
+}
+
+.naranja {
+	background: #E86730;
+}
+
+.morado {
+	background: #00B851/*rgba(171,64,237,0.5)*/;
+}
+
+.cuadro .contenido {
+	width: 95%;
+	padding: 20px 20px;
+	font-size: 18px;
+}
+
+
+
+.cuadro .contenido input[type="submit"]{
+	padding: 5px;
+	border-radius: 3px;
+	background: #4058ED;
+	color: #fff;
+}
+
+
+.lateral {
+	width: 20%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.lateral img {
+	width: 100%;
+}
+
+.lateral .acceso {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #F9F3FA;
+	margin: 20px 2px 30px 0;
+	background: #fff;
+}
+
+.lateral .titulo_acceso {
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	color: #F9F3FA;
+}
+
+.lateral .aviso {
+	color: #444;
+	text-align: right;
+	font-size: 10px;
+	margin-bottom: 5px;
+}
+
+.lateral .acceso input[type="submit"]{
+	padding: 5px;
+	margin: 5px;
+	border-radius: 3px;
+	background: #4058ED;
+	color: #fff;
+}
+
+.lateral .acceso input[type="text"],
+.lateral .acceso input[type="password"] {
+	width: 80%;
+}
+
+.lateral .producto {
+	background: #fff;
+	margin: 5px 0 10px 0;
+	padding-bottom: 10px;
+}
+
+.producto .promo {
+	font-size: 18px;
+	padding: 5px;
+	color: #7b527e;
+}
+
+.videos {
+	margin: 5px 0 10px 0;
+	background: #fff;
+	padding-left: 10px;
+}
+
+.videos .titulo_video{
+	font-size: 20px;
+	color: #D12A2A;
+}
+
+.videos .logo_yt {
+	width: 32px;
+	height: 32px;
+	background: url('../media/yt_negro.png');
+	background-size: 100%;
+	position: relative;
+	left: 40%;
+}
+
+.videos .logo_yt:hover {
+	width: 32px;
+	height: 32px;
+	background: url('../media/yt_rojo.png');
+	background-size: 100%;
+	position: relative;
+	left: 40%;
+}
+
+footer {
+	width: 100%;
+	background: #12181F;
+	font-size: 18px;
+	color: #fff;
+	display: flex;
+	text-align: center;
+}
+
+footer .privacidad {
+	width: 60%;
+}
+
+
+
+footer .redes {
+	width: 40%;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 1010px) {
+	header .menu a {
+		font-size: 18px;
+        
+	}
+}
+
+@media screen and (max-width: 960px) {
+
+	.lateral .acceso{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 890px){
+
+	.main {
+		width: 100%;
+	}
+
+	.proyecto {
+		margin-right: 10px;
+	}
+	.lateral {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+
+	.lateral .acceso {
+		width: 30%;
+		height: 200px;
+		margin-left: 10px;
+	}
+
+	.lateral .producto {
+		width: 30%;
+		height: 200px;
+	}
+
+	.lateral .producto img {
+		width: 65%;
+	}
+
+	.lateral .videos {
+		width: 30%;
+		height: 150px;
+		margin-right: 10px;
+	}
+
+	.videos span {
+		font-size: 18px;
+	}
+
+	.videos .logo_yt {
+		width: 64px;
+		height: 64px;
+	}
+
+	.videos .logo_yt:hover {
+		width: 64px;
+		height: 64px;
+	}
+
+	.lateral .acceso {
+		height: 220px;
+		margin-bottom: 10px;
+	}
+
+}
+
+@media screen and (max-width: 790px) {
+	body {
+		background: #000;
+	}
+
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	header .arriba {
+		order: 10;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	header .logo {
+		order: 5;
+		width: 100%;
+		position: relative;
+		left: 25%;
+		flex-direction: row;
+	}
+
+	.lateral .acceso {
+		height: 230px;
+		margin-bottom: 10px;
+	}
+
+	footer {
+		flex-direction: column-reverse;
+	}
+
+	footer .privacidad {
+		width: 100%;
+	}
+
+	footer .redes {
+		width: 100%;
+		font-size: 18px;
+	}
+
+}
+
+@media screen and (max-width: 660px) {
+	header .logo {
+		text-align: center;
+		position: relative;
+		left: 0%;
+		flex-direction: row;
+	}
+
+	.lateral {
+		flex-direction: column;
+		justify-content: flex-start;
+		text-align: center;
+	}
+
+	.lateral .acceso {
+		width: 80%;
+		height: 200px;
+		margin: 10px auto;
+	}
+	.lateral .producto {
+		width: 80%;
+		margin: 10px auto;
+	}
+
+	.lateral .producto img {
+		width: 30%;
+	}
+	.lateral .videos {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.cuadros {
+		flex-direction: column;
+	}
+
+	.cuadro {
+		width: 80%;
+		margin: 5px auto;
+	}
+
+}
